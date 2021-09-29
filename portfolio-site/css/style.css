@@ -3,8 +3,9 @@ header {
     background-color: darkblue;
 }
 
-nav {
-}
+/*nav {
+
+}*/
 
 nav ul {
     display: flex;
@@ -28,11 +29,50 @@ body {
 
 
 main {
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     text-align: center;
     background-color: floralwhite;
+    max-width: 75%;
+    margin: 0 auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 
+#projects {
+    display: grid;
+}
+
+#project1 {
+    min-width: 25px;
+    min-height: 25px;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+#project2 {
+    min-width: 25px;
+    min-height: 25px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+#project3 {
+    min-width: 25px;
+    min-height: 25px;
+    background-color: green;
+    border: 1px solid black;
+}
+
+#project4 {
+    min-width: 25px;
+    min-height: 25px;
+    background-color: yellow;
+    border: 1px solid black;
+}
 footer {
     text-align: center;
     background-color: darkolivegreen;
