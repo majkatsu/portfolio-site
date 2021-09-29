@@ -1,0 +1,39 @@
+header {
+    text-align: center;
+    background-color: darkblue;
+}
+
+nav {
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+        
+}
+nav ul li {
+    font-size: 24px;
+    font-family: sans-serif;
+    background-color: floralwhite;
+}
+
+
+body {
+    text-align: center;
+    background-color: darkgrey;
+}
+
+
+main {
+    text-align: center;
+    background-color: floralwhite;
+}
+
+
+footer {
+    text-align: center;
+    background-color: darkolivegreen;
+}
