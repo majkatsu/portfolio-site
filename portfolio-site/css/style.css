@@ -1,11 +1,26 @@
-header {
-    text-align: center;
-    background-color: darkblue;
+/* Font styles */
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto', sans-serif;
+    color: #202122;
 }
 
-/*nav {
+p {
+    font-family: 'Roboto Mono', monospace;
+    color: #202122;
+}
 
-}*/
+
+
+
+/* Page Structure */
+
+header {
+    text-align: center;
+    background-color: #213A54;
+    max-width: 75%;
+    margin: 0 auto;
+}
 
 nav ul {
     display: flex;
@@ -18,13 +33,25 @@ nav ul {
 nav ul li {
     font-size: 24px;
     font-family: sans-serif;
-    background-color: floralwhite;
+}
+
+nav p, nav h1 {
+    color: #5393D4;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #5393D4;
+    border: 3px solid #5393D4;
+    border-radius: 15px;
+    padding: 0.5em 0.5em;
 }
 
 
 body {
     text-align: center;
-    background-color: darkgrey;
+    background-color: #A9C2DB;
 }
 
 
@@ -34,46 +61,63 @@ main {
     justify-items: center;
     align-items: center;
     text-align: center;
-    background-color: floralwhite;
+    background-color: #A9C2DB;
     max-width: 75%;
     margin: 0 auto;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 2em;
+    padding-bottom: 5em;
 }
 
+/* Project Section Styles */
 
-#projects {
+#project-section {
+    padding: 3em 5em;
+
+}
+
+#project-container{
+    align-content: center;
+    justify-content: center;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.project {
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.project .project-name {
+    font-size: 24px;
 }
 
 #project1 {
-    min-width: 25px;
-    min-height: 25px;
+
     background-color: blue;
     border: 1px solid black;
 }
 
 #project2 {
-    min-width: 25px;
-    min-height: 25px;
     background-color: red;
     border: 1px solid black;
 }
 
 #project3 {
-    min-width: 25px;
-    min-height: 25px;
     background-color: green;
     border: 1px solid black;
 }
 
 #project4 {
-    min-width: 25px;
-    min-height: 25px;
     background-color: yellow;
     border: 1px solid black;
 }
 footer {
+    max-width: 75%;
+    padding: 0.1em 0.1em;
     text-align: center;
     background-color: darkolivegreen;
+    margin: 0 auto;
 }
+
+
