@@ -48,8 +48,15 @@ nav a {
     border: 3px solid #5393D4;
     border-radius: 15px;
     padding: 0.5em 0.5em;
+    transition: background-color 350ms linear 100ms, color 350ms linear 100ms;
 }
 
+nav a:hover {
+
+    background-color:#5393D4;
+    color:#213A54;
+
+}
 
 body {
     margin: 0;
@@ -93,13 +100,21 @@ main {
 
 .project .project-name {
     font-size: 24px;
+    transition: background-color 350ms linear 100ms, color 350ms linear 100ms;
+
 }
 
 #project1, #project4 {
-
     background-color: #3F70A1;
     border: 3px solid #213A54;
     border-radius: 10px;
+    color: #202122;
+}
+
+
+#project1:hover, #project4:hover {
+    color: #202122;
+    background-color: #3F70A1;
 }
 
 #project2, #project3 {
