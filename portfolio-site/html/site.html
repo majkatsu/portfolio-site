@@ -24,12 +24,13 @@
             <li><a href="#project-container">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About</a></li>
+            <li><img src="../resource/img/sun-moon.png" name="mode-changer" id="mode-changer" onclick="modeSwitcher();"></li>
         </ul>
      </nav>   
     </header>
 
 
-    <body>
+    <body id='body'>
 
         <main>
         <!--[if lt IE 7]>
@@ -37,12 +38,12 @@
         <![endif]-->
         <section name="about" id="about">
 
-            <h2>About this page</h2>
+            <h2 class="about-text">About this page</h2>
 
-            <p>This webpage is primarily used to showcase various projects I've worked on, 
+            <p class="about-text">This webpage is primarily used to showcase various projects I've worked on, 
              ideally to potential employers, but anyone is welcome here!</p>
                 <br>
-                <p>Below, you can find some a few projects I have highlighted but you can find
+                <p class="about-text">Below, you can find some a few projects I have highlighted but you can find
                 my entire portfolio <a href="put project page here!">here</a>.</p>
 
 
@@ -50,18 +51,49 @@
 
         <section name="project-section" id="project-section">
 
-            <h2>My Projects</h2>
+            <h2 class="about-text">My Projects</h2>
             
             <div name="project-container" id="project-container">
 
-            <div name="project1" id="project1" class="project"><h3 class="project-name">Project 1</h3><p class="project-description">A project</p></div>
-            <div name="project2" id="project2" class="project"><h3 class="project-name">Project 2</h3><p class="project-description">Another project</p></div>
-            <div name="project3" id="project3" class="project"><h3 class="project-name">Project 3</h3><p class="project-description">A third project</p></div>
-            <div name="project4" id="project4" class="project"><h3 class="project-name">Project 4</h3><p class="project-description">A final project</p></div>
+                <div name="project1" id="project1" class="project">
+                    <div id="project1-text" class="project-text">
+                        <span class="project-name">Project 1</span>
+                        <br>
+                        <br>
+                        <span class="project-description">A project</span>
+                    </div>
+                </div>
+            
+                <div name="project2" id="project2" class="project">
+                    <div id="project2-text" class="project text">
+                        <span class="project-name">Project 2</span>
+                        <br>
+                        <br>
+                        <span class="project-description">Another project</span>
+                    </div>
+                </div>
+                
+                <div name="project3" id="project3" class="project">
+                    <div id="project3-text" class="project-text">
+                        <span class="project-name">Project 3</span>
+                        <br>
+                        <br>
+                        <span class="project-description">A third project</span>
+                    </div>
+                </div>
+            
+                <div name="project4" id="project4" class="project">
+                    <div id="project4-text" class="project-text">
+                        <span class="project-name">Project 4</span>
+                        <br>
+                        <br>
+                        <span class="project-description">A final project</span>
+                    </div>
+                </div>
 
             </div>
         </section>
-       <!-- <script src="../js/script.js" async defer></script> -->
+       <script src="../js/script.js" async defer></script>
     
         </main>
     </body>

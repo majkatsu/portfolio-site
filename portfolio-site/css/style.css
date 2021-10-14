@@ -58,10 +58,18 @@ nav a:hover {
 
 }
 
+nav img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+
+
+
 body {
     margin: 0;
     text-align: center;
-    background-color: #A9C2DB;
+    background-color: #dae5f0;
 }
 
 
@@ -71,7 +79,6 @@ main {
     justify-items: center;
     align-items: center;
     text-align: center;
-    background-color: #A9C2DB;
     max-width: 75%;
     margin: 0 auto;
     /*padding-top: 2em;*/
@@ -94,38 +101,44 @@ main {
 }
 
 .project {
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: #213A54;
+    border: 3px solid #284666;
+    border-radius: 10px;
+    color:#5393D4;
+    transition: background-color 350ms linear 100ms, color 350ms linear 100ms;
+
+
 }
 
 .project .project-name {
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
-    transition: background-color 350ms linear 100ms, color 350ms linear 100ms;
+    font-weight: bolder;
 
 }
 
-#project1, #project4 {
-    background-color: #3F70A1;
-    border: 3px solid #213A54;
-    border-radius: 10px;
-    color: #202122;
+.project-description {
+    font-family: 'Roboto Mono', monospace;
+
 }
 
-
-#project1:hover, #project4:hover {
-    color: #202122;
-    background-color: #3F70A1;
+.project-text {
+    display: contents;
 }
 
-#project2, #project3 {
-    background-color:#213A54;
-    border: 3px solid #3F70A1;
-    border-radius: 10px;
+/* Project section transition/animation rules */
+
+
+
+
+.project:hover, .project:focus {
+    
+    background-color:#5393D4;
+    color:#213A54;
 }
 
-#project2 h3, #project2 p, #project3 h3, #project3 p {
-    color:#5393D4;
-}
 
 
 footer {
