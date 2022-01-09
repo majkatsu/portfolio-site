@@ -1,3 +1,13 @@
+
+
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+
+
 /* Font styles */
 
 h1, h2, h3, h4, h5 {
@@ -5,13 +15,29 @@ h1, h2, h3, h4, h5 {
     color: #202122;
 }
 
-p {
-    font-family: 'Roboto Mono', monospace;
+p, #lorem-ipsum {
+/*    font-family: 'Roboto Mono', monospace; */
+    font-family: 'Roboto', sans-serif;
+
     color: #202122;
 }
 
 
+.project .project-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
 
+}
+
+.project-description {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.project-text {
+    display: contents;
+}
 
 /* Page Structure */
 
@@ -84,6 +110,12 @@ main {
     /*padding-top: 2em;*/
 }
 
+#ipsum-lorem {
+
+margin: 0 auto;
+    
+} 
+
 /* Project Section Styles */
 
 #project-section {
@@ -112,27 +144,12 @@ main {
 
 }
 
-.project .project-name {
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    font-weight: bolder;
 
-}
-
-.project-description {
-    font-family: 'Roboto Mono', monospace;
-
-}
-
-.project-text {
-    display: contents;
-}
 
 /* Project section transition/animation rules */
 
 
-
-
+  
 .project:hover, .project:focus {
     
     background-color:#5393D4;
@@ -147,11 +164,175 @@ footer {
     align-content: space-around;
     text-align: center;
     background-color: #213A54;
+    overflow: hidden;
 }
 
 footer p {
     font-weight: bold;
     color: #A9C2DB;
 }
+
+
+
+
+
+
+
+
+/* Reactive Styles */
+
+/* 4k, Width <= 2560px */
+@media only screen and (min-width: 2560px){
+    header, nav ul li {
+        font-size: 1.5em;
+    }
+
+    nav img {
+        max-height: 3.5em;
+        max-width: 3.5em;
+    }
+    .about-text, footer {
+        font-size: 2em;
+    }
+    footer {
+        margin-top: 1em;
+    }
+
+    .project .project-name {
+        font-size: 3em;
+    }
+
+    .project .project-description {
+        font-size: 2.5em;
+    }
+}
+
+/* Desktop, Width <= 1920px */
+@media (max-width:2559px) and (min-width: 1920px){
+    header, nav ul li {
+        font-size: 1.3em;
+    }
+
+    nav img {
+        max-height: 3.5em;
+        max-width: 3.5em;
+    }
+    .about-text {
+        font-size: 1.3em;
+    }
+    footer {
+        margin-top: 1em;
+    }
+
+    .project .project-name {
+        font-size: 2em;
+    }
+
+    .project .project-description {
+        font-size: 1.5em;
+    }
+}
+
+
+
+/* Laptop, Width <= 1440px */
+@media (max-width:1919px) and (min-width: 1440px){
+    header, nav ul li {
+        font-size: 1.3em;
+    }
+
+    nav img {
+        max-height: 3.5em;
+        max-width: 3.5em;
+    }
+    .about-text {
+        font-size: 1.3em;
+    }
+    footer {
+        margin-top: 1em;
+    }
+
+    .project .project-name {
+        font-size: 2em;
+    }
+
+    .project .project-description {
+        font-size: 1.5em;
+    }
+}
+
+
+/* Tablet, Width <= 768px */
+@media (max-width:1439) and (min-width: 768px){
+    header, nav ul li {
+        font-size: 1em;
+    }
+
+
+    footer {
+        margin-top: 0.8em;
+    }
+
+    .project .project-name {
+        font-size: 1em;
+    }
+
+    .project .project-description {
+        font-size: 0.95em;
+    }
+}
+
+
+/* Mobile Large, Width <= 425px */
+@media (max-width: 765px) and (min-width: 425px){
+    header, nav ul li {
+        font-size: 0.95em;
+    }
+
+    h1#logo {
+        display: none;
+    }
+
+    footer {
+        margin-top: 0.8em;
+    }
+
+    .project .project-name {
+        font-size: 0.95em;
+    }
+
+    .project .project-description {
+        font-size: 0.85em;
+    }
+}
+
+/* Mobile Small, Width <= 320px */
+@media (max-width: 420px) and (min-width: 320px){
+    header, nav ul li {
+        font-size: 0.8em;
+    }
+
+    nav img {
+        max-width: 3.2em;
+        max-height: 4em;
+    }
+
+    h1#logo {
+        display: none;
+    }
+
+    footer {
+        margin-top: 0.8em;
+    }
+
+    .project .project-name {
+        font-size: 0.95em;
+    }
+
+    .project .project-description {
+        font-size: 0.85em;
+    }
+}
+
 
 
